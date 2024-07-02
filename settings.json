@@ -1,0 +1,391 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggestSelection": "first",
+    "jshint.options":  {
+        "esversion": 6,
+        "asi": true,
+    },
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Recent Issues",
+            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+        }
+    ],
+    "files.associations": {
+        "*.html": "html"
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": true,
+        "javascript": true
+    },
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "projectManager.git.baseFolders": [
+        "D:\\Projetos",
+        "D:\\xampp8\\htdocs"
+    ],
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe --no-logo"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu20.04LTS (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu20.04LTS"
+            ]
+        },
+        "Windows PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        },
+        "Nushell": {
+            "path": "C:\\Users\\cesar\\.cargo\\nu.exe",
+            "args": []
+        }
+    },
+    "explorer.confirmDelete": false,
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#dd0531"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#61dafb"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Svelte Orange",
+            "value": "#ff3d00"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        }
+    ],
+    "peacock.affectSideBarBorder": true,
+    "peacock.affectTabActiveBorder": true,
+    "peacock.affectStatusAndTitleBorders": true,
+    "peacock.vslsJoinColor": "#1857a4",
+    "database-client.highlightSQLBlock": true,
+    "database-client.showUser": true,
+    "database-client.showTrigger": true,
+    "database-client.showFilter": true,
+    "database-client.showQuery": true,
+    "code-runner.executorMap": {
+
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein run",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "code-runner.executorMapByGlob": {
+    
+        "pom.xml": "cd $dir && mvn clean package"
+    },
+    "settingsSync.ignoredSettings": [
+        "-bookmarks.gutterIconPath"
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "vscode-edge-devtools.fallbackRevision": "@a41122be052fe9616f0def5fe6842fa942930d46",
+    "redhat.telemetry.enabled": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "sonarlint.ls.javaHome": "c:\\Users\\theem\\.vscode\\extensions\\sonarsource.sonarlint_managed-jre\\jre\\jdk-11.0.15+10-jre",
+    "sonarlint.rules": {
+        "php:S3776": {
+            "level": "off"
+        },
+        "php:S1126": {
+            "level": "off"
+        },
+        "Web:PageWithoutTitleCheck": {
+            "level": "off"
+        },
+        "php:S1116": {
+            "level": "off"
+        },
+        "php:S1192": {
+            "level": "off"
+        },
+        "Web:TableWithoutCaptionCheck": {
+            "level": "off"
+        },
+        "Web:S5256": {
+            "level": "off"
+        }
+    },
+    "window.commandCenter": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.accessibilitySupport": "off",
+    "[python]": {
+        "editor.formatOnSave": true
+    },
+    "shareCode.pastebin.username": "thesilvacesar",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "markdown-preview-enhanced.previewTheme": "github-light.css",
+    "vscodeGoogleTranslate.preferredLanguage": "Portuguese",
+    "editor.linkedEditing": true,
+    "vscode-office.openOutline": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "tabnine.experimentalAutoImports": true,
+    "yaml.schemas": {
+        "file:///c%3A/Users/cesar/.vscode/extensions/docsmsft.docs-yaml-1.0.4/dist/toc.schema.json": "/toc\\.yml/i"
+    },
+    "liveshare.accessibility.soundsEnabled": false,
+    "window.menuBarVisibility": "compact",
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "terminal.integrated.env.windows": {},
+    "zig.zigPath": "c:\\Users\\cesar\\AppData\\Roaming\\Code\\User\\globalStorage\\ziglang.vscode-zig\\zig_install\\zig.exe",
+    "zig.zigVersion": "0.11.0",
+    "zig.zls.enabled": true,
+    "zig.zls.path": "c:\\Users\\cesar\\AppData\\Roaming\\Code\\User\\globalStorage\\ziglang.vscode-zig\\zls_install\\zls.exe",
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "git.confirmSync": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "console-ninja.featureSet": "Community",
+    "gitbook.orgId": "NMYzfO8gwEBmNVixOyDr",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "shareCode.github.username": "kremilly",
+    "security.workspace.trust.untrustedFiles": "open",
+    "zig.path": "c:\\Users\\cesar\\AppData\\Roaming\\Code\\User\\globalStorage\\ziglang.vscode-zig\\zig_install\\zig.exe",
+    "zig.initialSetupDone": true,
+    "vscode-office.editorTheme": "Auto",
+    "workbench.editorAssociations": {
+        "*.db": "sqlite-viewer.option"
+    },
+    "runTerminalCommand.commands": [
+        {
+            "auto": true,
+            "command": "wsl",
+            "name": "Activate WSL"
+        },
+        {
+            "auto": true,
+            "command": "yarn install",
+            "name": "Install npm packages (Node)"
+        },
+        {
+            "auto": true,
+            "command": "pip install -r requirements.txt",
+            "name": "Install all dependencies (Python)"
+        },
+        {
+            "auto": true,
+            "command": "python -m venv venv",
+            "name": "Create venv (Python)"
+        },
+        {
+            "auto": true,
+            "command": "cd venv/Scripts; ./activate.ps1; cd ../../; cls;",
+            "name": "Activate venv"
+        },
+        {
+            "auto": true,
+            "command": "cd venv/Scripts; ./activate.ps1; cd ../../; cls; python index.py",
+            "name": "Activate venv and start Flask (Python)"
+        },
+        {
+            "auto": true,
+            "command": "python -m venv venv; cd venv/Scripts; ./activate.ps1; cd ../../; cls; pip install -r requirements.txt",
+            "name": "Create and activate venv and install all dependencies (Python)"
+        },
+    ],
+    "git.autofetch": true,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "calva.paredit.defaultKeyMap": "strict",
+    "calva.prettyPrintingOptions": {
+        "printEngine": "pprint",
+        "enabled": true,
+        "width": 120,
+        "maxLength": 50
+    },
+    "workbench.settings.applyToAllProfiles": [
+    
+    
+    ],
+    "eslint.skipProjects": [
+        "quick-lint-js"
+    ],
+    "editor.fontFamily": "Consolas, 'Courier New', 'JetBrainsMono Nerd Font Mono', monospace",
+    "scm.workingSets.enabled": true,
+    "prisma.showPrismaDataPlatformNotification": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.editor.pinnedTabSizing": "compact",
+    "accessibility.signalOptions": {
+        "volume": 0
+    },
+    "workbench.colorTheme": "Dracula Pro",
+    "snyk.yesWelcomeNotification": false,
+    "snyk.advanced.cliPath": "C:\\Users\\cesar\\AppData\\Local\\snyk-ls\\snyk-win.exe",
+    "snyk.trustedFolders": [
+        "d:\\Projetos\\Python\\Raven",
+        "d:\\Projetos\\Rust\\Monset",
+        "d:\\Projetos\\HTML\\ReadMeTemplate",
+        "d:\\Projetos\\Python\\Addons",
+        "d:\\Projetos\\Docs\\ScimonDocs"
+    ],
+    "security.workspace.trust.emptyWindow": false,
+    "security.workspace.trust.enabled": false,
+    "explorer.fileNesting.patterns": {
+        "Cargo.toml": "Cargo.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "files.autoSave": "afterDelay",
+}
