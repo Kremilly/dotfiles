@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "../OneDrive/Documentos/Projetos/Python/Hub"
+		},
+		{
+			"path": "../OneDrive/Documentos/Projetos/Python/MyApis"
+		},
+		{
+			"path": "../OneDrive/Documentos/Projetos/Python/Raven"
+		},
+		{
+			"path": "../OneDrive/Documentos/Projetos/Rust/Monset"
+		},
+		{
+			"path": "../OneDrive/Documentos/Projetos/Docs/ScimonDocs"
+		},
+		{
+			"path": "../OneDrive/Documentos/Trabalho/ProJuDB"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ReadMeTemplate",
+		"rust-analyzer.checkOnSave": true
+	}
+}
